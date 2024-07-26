@@ -23,13 +23,13 @@ async function loadPokemon(id) {
 
       window.history.pushState({}, "", `./detail.html?id=${id}`);
     } else {
-      window.location.href = "./index.html";
+      window.location.href = "../index.html";
     }
 
     return true;
   } catch (error) {
     console.error("An error occurred while fetching Pokemon data:", error);
-    window.location.href = "./index.html";
+    window.location.href = "../index.html";
     return false;
   }
 }

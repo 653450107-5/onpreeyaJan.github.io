@@ -38,7 +38,7 @@ async function navigatePokemon(id) {
   currentPokemonId = id;
   await loadPokemon(id);
 }
-
+// set color 
 const typeColors = {
   normal: "#A8A878",
   fire: "#F08030",
